@@ -2,7 +2,7 @@ import React from 'react';
 import Title from "../../Title";
 import { useTranslation } from 'react-i18next';
 
-const Home = () => {
+const HomePage = () => {
     const { t } = useTranslation();
     return <div>
         <Title title={t('home_page')}/>
@@ -10,4 +10,4 @@ const Home = () => {
     </div>;
 };
 
-export default Home;
+export default HomePage;
