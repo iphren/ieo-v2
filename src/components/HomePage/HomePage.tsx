@@ -1,6 +1,6 @@
 import React from 'react';
-import Title from "../../Title";
 import { useTranslation } from 'react-i18next';
+import Title from "../../Title";
 
 const HomePage = () => {
     const { t } = useTranslation();

@@ -5,10 +5,10 @@ import translationEnGb from './locales/en-GB/translation.json';
 import translationZhCn from './locales/zh-CN/translation.json';
 
 const resources = {
-    "en": {
+    "en-GB": {
         translation: translationEnGb
     },
-    "zh": {
+    "zh-CN": {
         translation: translationZhCn
     }
 };
@@ -18,7 +18,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        fallbackLng: 'zh',
+        fallbackLng: 'zh-CN',
         interpolation: {
             escapeValue: false
         }
