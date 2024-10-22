@@ -1,7 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const Title = ({ title }) => {
+interface TitleProps {
+    title: string;
+}
+
+const Title = ({ title } : TitleProps) => {
     const appTitle = 'IEO';
     return (
         <Helmet>
