@@ -7,7 +7,7 @@ const Footer = () => {
     const { t } = useTranslation();
 
     return <Container sx={{
-        my: 5,
+        my: 10,
         px: 5,
         textAlign: "center"
     }}>
