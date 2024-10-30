@@ -1,5 +1,12 @@
 {
   "home_page" : "Home",
   "uk_online_courses" : "Online Courses",
-  "uk_top_universities" : "Top universities"
+  "uk_top_universities" : "Top universities",
+  "home" : {
+    "carousel" : [
+      "Summer course: Learn English with a British teacher",
+      "A-Level / GCSE Breakout: Reserve Now for Summer Vacation Course",
+      "Under the Epidemic, Application Strategy to Win 2023"
+    ]
+  }
 }

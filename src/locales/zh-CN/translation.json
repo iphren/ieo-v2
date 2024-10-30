@@ -1,5 +1,12 @@
 {
   "home_page" : "首页",
   "uk_online_courses" : "英国在线课程",
-  "uk_top_universities" : "英国顶级大学"
+  "uk_top_universities" : "英国顶级大学",
+    "home" : {
+        "carousel" : [
+        "暑期课程：跟着英国老师学英语",
+        "A-Level / GCSE大突围：暑假课程开启预约",
+        "疫情之下，决胜2023申请攻略"
+        ]
+    }
 }
