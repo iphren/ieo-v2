@@ -2,9 +2,14 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button, Fade, Menu, MenuItem } from "@mui/material";
 import { Link } from 'react-router-dom';
+import { activePage } from "../IeoAppBar";
 import styles from '../IeoAppBar.module.scss';
 
-const CoursesButton = () => {
+interface NavProps {
+    path : string;
+}
+
+const CoursesButton = ({ path } : NavProps) => {
     const { t } = useTranslation();
 
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -19,7 +24,7 @@ const CoursesButton = () => {
     return <>
         <Button
             id="courses-button"
-            className={styles.navButton}
+            className={`${styles.navButton} ${activePage(path, "/choose-us")} ${activePage(path, "/tutors")}`}
             aria-controls={open ? 'courses-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
@@ -39,6 +44,7 @@ const CoursesButton = () => {
         >
             <MenuItem
                 className={styles.menuItem}
+                selected={Boolean(activePage(path, "/choose-us"))}
                 component={Link}
                 to="/choose-us"
                 onClick={handleClose}>
@@ -46,6 +52,7 @@ const CoursesButton = () => {
             </MenuItem>
             <MenuItem
                 className={styles.menuItem}
+                selected={Boolean(activePage(path, "/tutors"))}
                 component={Link}
                 to="/tutors"
                 onClick={handleClose}>

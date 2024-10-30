@@ -15,6 +15,9 @@
   &:hover {
     color: rgba(0, 0, 0, 0.7) !important;
   }
+  &.activePage {
+    color: rgba(0, 0, 0) !important;
+  }
 }
 
 .menuItem {
