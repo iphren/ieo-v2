@@ -1,20 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {AppBar, Button, Container, Fade, Menu, MenuItem, Toolbar} from "@mui/material";
+import { AppBar, Button, Container, Toolbar } from "@mui/material";
 import { Link } from 'react-router-dom';
 import styles from './IeoAppBar.module.scss';
+import CoursesButton from "./CoursesButton/CoursesButton";
 
 const IeoAppBar = () => {
     const { t } = useTranslation();
-
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
 
     return <AppBar position="sticky" sx={{
         bgcolor: "#f8f9fa",
@@ -36,30 +28,7 @@ const IeoAppBar = () => {
                 >
                     {t('home_page')}
                 </Button>
-                <Button
-                    id="courses-button"
-                    className={styles.navButton}
-                    aria-controls={open ? 'courses-menu' : undefined}
-                    aria-haspopup="true"
-                    aria-expanded={open ? 'true' : undefined}
-                    onClick={handleClick}
-                >
-                    {t('uk_online_courses')}
-                </Button>
-                <Menu
-                    id="courses-menu"
-                    MenuListProps={{
-                        'aria-labelledby': 'courses-button',
-                    }}
-                    anchorEl={anchorEl}
-                    open={open}
-                    onClose={handleClose}
-                    TransitionComponent={Fade}
-                >
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Menu>
+                <CoursesButton />
             </Toolbar>
         </Container>
     </AppBar>;

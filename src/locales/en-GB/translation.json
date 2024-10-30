@@ -1,7 +1,62 @@
 {
   "home_page" : "Home",
-  "uk_online_courses" : "Online Courses",
-  "uk_top_universities" : "Top universities",
+  "uk_online_courses" : {
+    "title" : "Online Courses",
+    "content" : {
+      "choose_us" : {
+        "title" : "Choose Us",
+        "content" : {
+          "faculty" : "Local Faculty",
+          "faculty_desc" : "Whether Chinese or local British, all of our teachers have experienced full English education from UK high schools to top universities. They have gone through hundreds of battles, but now they are spreading their accumulated experience in all directions.",
+          "students" : "Role Models",
+          "students_desc" : "Every one of our teachers was a brilliant student at the time. The college they graduated from was a dream place for many students. The power of role models and the guidance of the seniors will allow students to learn a lot in terms of learning and preparation for admission."
+        }
+      },
+      "tutors" : {
+        "title" : "Tutors",
+        "content" : {
+          "wu" : {
+            "name" : "Dr. Wu",
+            "intro" : "Graduated from Imperial College London. He taught at Malvern International School in Qingdao, Shandong, and is now a teacher at the top British private school Harrodian.",
+            "subjects" : "AS / A2 Physics, AS Mathematics Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, GCSE / IGCSE Mathematics, GCSE / IGCSE Physics, KS3 Mathematics and Science"
+          },
+          "jason" : {
+            "name" : "Jason",
+            "intro" : "Master's degree from Imperial College London, started studying at the top British private school Ipswich since junior high school, graduated from GCSE with 10 A and A* grades, and A-Level with four A* grades.",
+            "subjects" : "A-Level Physics / Chemistry, GCSE Science, KS3 Science"
+          },
+          "huang" : {
+            "name" : "Huang",
+            "intro" : "Master's degree from Imperial College London, first-class degree in engineering from Manchester Engineering College, high school at the British private school Duff Miller, A-Level with four A and A* grades.",
+            "subjects" : "Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, A-Level Higher Mathematics Further Pure Math 1 / 2, Further Statistics 1 / 2, Further Mechanics 1 / 2, GCSE / IGCSE Mathematics"
+          },
+          "phoebe" : {
+            "name" : "Phoebe",
+            "intro" : "Graduated from UCL and LSE. Worked in investment banks in London and Hong Kong.",
+            "subjects" : "A-Level Economics, GCSE Economics, A-Level Business, GCSE Business"
+          },
+          "selena" : {
+            "name" : "Selena",
+            "intro" : "Hong Kong native, grew up in the UK. Expert in teaching young children in the UK, extremely experienced. Several students have been admitted to many top British private schools such as Brighton College, Cheltenham Ladies, Downe House, etc.",
+            "subjects" : "7+ to 13+ entrance exams, IGCSE / GCSE English and literature courses, UK SATs / UKiset exams"
+          },
+          "maddy" : {
+            "name" : "Maddy",
+            "intro" : "Holds a TESOL teaching qualification, former ASDAN trainer at an international training institution, former lecturer at Uxbridge College. Ten years of teaching experience.",
+            "subjects" : "English listening / speaking / reading / writing, ESL, GCSE / A-Level English / art portfolio guidance"
+          },
+          "christine" : {
+            "name" : "Christine",
+            "intro" : "Currently teaching at a public secondary school in London, with 30 years of experience in English and literature teaching, extremely rich teaching experience. A bilingual user of English and French.",
+            "subjects" : "English listening / speaking / reading / writing, ESL, GCSE / A-Level English, English subjects for private school entrance exams from 3 years old to 16 years old"
+          }
+        }
+      }
+    }
+  },
+  "uk_top_universities" : {
+    "title" : "Top Universities"
+  },
   "home" : {
     "carousel" : [
       "Summer course: Learn English with a British teacher",

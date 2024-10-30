@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from "../../Title";
-import HomeCarousel from "../HomeCarousel/HomeCarousel";
+import HomeCarousel from "./HomeCarousel/HomeCarousel";
 
 const HomePage = () => {
     const { t } = useTranslation();

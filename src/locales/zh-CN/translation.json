@@ -1,7 +1,62 @@
 {
   "home_page" : "首页",
-  "uk_online_courses" : "英国在线课程",
-  "uk_top_universities" : "英国顶级大学",
+  "uk_online_courses" : {
+    "title" : "英国在线课程",
+    "content" : {
+      "choose_us" : {
+        "title" : "选择我们",
+        "content" : {
+          "faculty" : "本土师资力量",
+          "faculty_desc" : "无论是华人还是本地英国人，我们的所有老师都经历过英国中学至顶级大学的完整英式教育。他们曾经身经百战， 现在潜心把积累的经验传播四方。",
+          "students" : "学霸的榜样",
+          "students_desc" : "我们的每一位老师在当年都是学霸级的存在，他们毕业的院校是众多学生的梦想之地，榜样的力量和学长的指点会让学生无论在学习还是在入学准备方面收获颇丰。"
+        }
+      },
+      "tutors" : {
+        "title" : "教师介绍",
+        "content" : {
+          "wu" : {
+            "name" : "Dr. Wu",
+            "intro" : "毕业于帝国理工工程学院。曾在山东青岛墨尔文国际学校任教，现为英国顶级私校 Harrodian 的任课教师。",
+            "subjects" : "AS / A2 物理, AS 数学 Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, GCSE / IGCSE 数学, GCSE / IGCSE 物理, KS3 数学科学"
+          },
+          "jason" : {
+            "name" : "Jason 老师",
+            "intro" : "帝国理工硕士毕业，初中开始就读于英国顶级私校Ipswich，GCSE 10门A及A*毕业，A-Level四门全A*。",
+            "subjects" : "A-Level 物理 / 化学, GCSE 科学, KS3 科学"
+          },
+          "huang" : {
+            "name" : "黄老师",
+            "intro" : "帝国理工工程学院硕士毕业，曼彻斯特工程学院工学学士一等学位毕业，高中就读于英国私校达夫米勒中学，A-Level四个A及A*。",
+            "subjects" : "Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, A-Level 高数 Further Pure Math 1 / 2, Further Statistics 1 / 2, Further Mechanics 1 / 2, GCSE / IGCSE 数学"
+          },
+          "phoebe" : {
+            "name" : "Phoebe 老师",
+            "intro" : "UCL和LSE毕业。在伦敦和香港两地的投行工作。",
+            "subjects" : "A-Level 经济, GCSE 经济, A-Level 商业, GCSE 商业"
+          },
+          "selena" : {
+            "name" : "Selena 老师",
+            "intro" : "祖籍香港，自小在英国长大。 英国低龄教学的专家，经验极其丰富。已有多名学生被 Brighton College， Cheltenham Ladies, Downe House 等英国众多顶级私校录取。",
+            "subjects" : "7+至13+的入学考试, IGCSE / GCSE 英语及文学课程, 英国 SATs / UKiset 考试"
+          },
+          "maddy" : {
+            "name" : "Maddy 老师",
+            "intro" : "持有 TESOL 教师资格证，前国际培训机构 ASDAN 培训师，前Uxbridge college（Uxbridge 继续教育学院）讲师。十年教学经验。",
+            "subjects" : "英语听 / 说 / 读 / 写, ESL, GCSE / A-Level 英语 / 艺术作品集指导"
+          },
+          "christine" : {
+            "name" : "Christine 老师",
+            "intro" : "现执教于伦敦一所公立中学，长达30年的英语及文学教龄，教学经验极其丰富。是英语和法语的双母语使用者。",
+            "subjects" : "英语听 / 说 / 读 / 写, ESL, GCSE / A-Level 英语, 低龄3岁至16岁的私校入学考试英语科目"
+          }
+        }
+      }
+    }
+  },
+  "uk_top_universities" : {
+    "title" : "英国顶级大学"
+  },
   "home" : {
     "carousel" : [
       "暑期课程：跟着英国老师学英语",
