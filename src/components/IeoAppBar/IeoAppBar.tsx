@@ -16,21 +16,27 @@ const IeoAppBar = () => {
     };
 
     return <AppBar position="sticky" sx={{ boxShadow: 0 }}>
-        <Container disableGutters>
-            <Toolbar sx={{
+        <Container disableGutters maxWidth={false}>
+            <Toolbar disableGutters sx={{
                 bgcolor: "#f8f9fa",
-                boxShadow: 0
+                boxShadow: 0,
+                height: "4.75rem",
+                padding: "0 1rem"
             }}>
                 <div className={styles.logoImage}></div>
                 <Button
+                    className={styles.navButton}
+                    href={'/'}
+                >
+                    {t('home_page')}
+                </Button>
+                <Button
                     id="courses-button"
+                    className={styles.navButton}
                     aria-controls={open ? 'courses-menu' : undefined}
                     aria-haspopup="true"
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
-                    sx={{
-                        color: "black"
-                    }}
                 >
                     {t('uk_online_courses')}
                 </Button>
