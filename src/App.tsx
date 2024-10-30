@@ -1,4 +1,3 @@
-import './App.css';
 import AppRoutes from "./Routes";
 import IeoAppBar from "./components/IeoAppBar/IeoAppBar";
 

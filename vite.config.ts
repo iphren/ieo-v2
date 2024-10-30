@@ -13,6 +13,7 @@ export default defineConfig({
         reporters: ['verbose'],
         coverage: {
             reporter: ['text', 'json', 'html'],
+            provider: "v8",
             include: ['src/**/*'],
             exclude: [],
         }

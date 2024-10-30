@@ -16,7 +16,10 @@ const IeoAppBar = () => {
         setAnchorEl(null);
     };
 
-    return <AppBar position="sticky" sx={{ boxShadow: 0 }}>
+    return <AppBar position="sticky" sx={{
+        bgcolor: "#f8f9fa",
+        boxShadow: 0
+    }}>
         <Container disableGutters maxWidth={false}>
             <Toolbar disableGutters sx={{
                 bgcolor: "#f8f9fa",
@@ -26,9 +29,10 @@ const IeoAppBar = () => {
             }}>
                 <div className={styles.logoImage}></div>
                 <Button
+                    id="home-button"
                     className={styles.navButton}
                     component={Link}
-                    to='/'
+                    to="/"
                 >
                     {t('home_page')}
                 </Button>
