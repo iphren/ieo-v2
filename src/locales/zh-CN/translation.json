@@ -63,5 +63,9 @@
       "A-Level / GCSE大突围：暑假课程开启预约",
       "疫情之下，决胜2023申请攻略"
     ]
-  }
+  },
+  "wechat_public" : "微信公众号",
+  "wechat_helper" : "微信小助手",
+  "email" : "邮箱",
+  "phone" : "电话"
 }

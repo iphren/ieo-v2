@@ -3,12 +3,39 @@
   width: 150px;
 }
 
+.image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  & > * {
+    padding: 0.5rem;
+  }
+  &:nth-child(2) > * {
+    padding: 1rem;
+  }
+}
+
 .wechat1 .qrcode {
   background-image: url('/img/ieo-wechat1.svg');
 }
 
 .wechat2 .qrcode {
   background-image: url('/img/ieo-wechat2.svg');
+}
+
+.contact {
+  text-align: start;
+  & > * {
+    display: inline-block;
+    margin-left: 0.5rem !important;
+  }
 }
 
 .englishUk {
