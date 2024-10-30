@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {AppBar, Button, Container, Fade, Menu, MenuItem, Toolbar} from "@mui/material";
+import { Link } from 'react-router-dom';
 import styles from './IeoAppBar.module.scss';
 
 const IeoAppBar = () => {
@@ -26,7 +27,8 @@ const IeoAppBar = () => {
                 <div className={styles.logoImage}></div>
                 <Button
                     className={styles.navButton}
-                    href={'/'}
+                    component={Link}
+                    to='/'
                 >
                     {t('home_page')}
                 </Button>
