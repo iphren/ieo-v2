@@ -6,7 +6,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
     const { t } = useTranslation();
 
-    return <Container sx={{
+    return <Container fixed={true} sx={{
         my: 10,
         px: 5,
         textAlign: "center"

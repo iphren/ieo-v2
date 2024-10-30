@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const ChooseUsPage = () => {
     const { t } = useTranslation();
 
-    return <Container sx={{
+    return <Container fixed={true} sx={{
         my: 5,
         px: 5
     }}>
