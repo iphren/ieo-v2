@@ -6,9 +6,9 @@ import styles from './HomeCarousel.module.scss';
 const HomeCarousel = () => {
     const { t } = useTranslation();
     const carouselItems = [
-        { text: t('home.carousel.0'), image: '/img/slide-0.jpg' },
-        { text: t('home.carousel.1'), image: '/img/slide-1.jpg' },
-        { text: t('home.carousel.2'), image: '/img/slide-2.jpg' },
+        { text: t('home.carousel.0') },
+        { text: t('home.carousel.1') },
+        { text: t('home.carousel.2') },
     ];
     return <Carousel>
         {carouselItems.map((item, index) => (

@@ -8,12 +8,12 @@
     background-repeat: no-repeat;
   }
   &:nth-child(1) .carouselImage {
-    background-image: url('/img/slide-0.jpg');
+    background-image: url('/img/home/slide-0.jpg');
   }
   &:nth-child(2) .carouselImage {
-    background-image: url('/img/slide-1.jpg');
+    background-image: url('/img/home/slide-1.jpg');
   }
   &:nth-child(3) .carouselImage {
-    background-image: url('/img/slide-2.jpg');
+    background-image: url('/img/home/slide-2.jpg');
   }
 }
