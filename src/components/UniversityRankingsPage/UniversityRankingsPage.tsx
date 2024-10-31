@@ -9,7 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import { useTranslation } from 'react-i18next';
 import Title from "../../Title";
 import { getRankings } from "../../services/ResourcesService";
-import { Rankings } from "../../types";
+import { Rankings, SupportedLanguages } from "../../types";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -41,7 +41,8 @@ function a11yProps(year: number) {
 }
 
 const UniversityRankingsPage = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const currentLanguage = i18n.language as SupportedLanguages;
     const [value, setValue] = React.useState(0);
     const [rankings, setRankings] = useState<Rankings[]>([]);
     useEffect(() => {
@@ -97,7 +98,7 @@ const UniversityRankingsPage = () => {
                                         <TableCell component="th" scope="row">
                                             {row.rank}
                                         </TableCell>
-                                        <TableCell>{row['zh-cn']}</TableCell>
+                                        <TableCell>{row.university[currentLanguage]}</TableCell>
                                         <TableCell align="right">{row.score}</TableCell>
                                     </TableRow>
                                 ))}

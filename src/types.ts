@@ -1,15 +1,17 @@
+export type SupportedLanguages = 'zh-CN' | 'en-GB';
+
+export type Translation = {
+    [language in SupportedLanguages]: string;
+}
+
 export interface Rankings {
     year: number;
     rankings: {
         rank: string;
         score: string;
         "zh-cn": string;
+        university: Translation;
     }[];
-}
-
-export interface Translation {
-    "zh-CN": string;
-    "en-GB": string;
 }
 
 export interface Feed {
