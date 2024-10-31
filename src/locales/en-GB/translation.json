@@ -97,15 +97,6 @@
     "admissions" : "Admission List",
     "congrats" : "Congratulations to the IEO student who got admitted to {{university}}!"
   },
-  "university" : {
-    "kcl" : "King's College London",
-    "ucl" : "University College London",
-    "warwick" : "University of Warwick",
-    "imperial" : "Imperial College London",
-    "edinburgh" : "The University of Edinburgh",
-    "durham" : "Durham University",
-    "manchester" : "The University of Manchester"
-  },
   "contact_us" : {
     "title" : "Contact Us",
     "content" : {

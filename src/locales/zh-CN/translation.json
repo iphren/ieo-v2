@@ -97,15 +97,6 @@
     "admissions" : "录取榜单",
     "congrats" : "恭喜IEO学员获得{{university}}录取通知书！"
   },
-  "university" : {
-    "kcl" : "伦敦国王学院",
-    "ucl" : "UCL",
-    "warwick" : "华威大学",
-    "imperial" : "伦敦帝国理工学院",
-    "edinburgh" : "爱丁堡大学",
-    "durham" : "杜伦大学",
-    "manchester" : "曼彻斯特大学"
-  },
   "contact_us" : {
     "title" : "联系我们",
     "content" : {
