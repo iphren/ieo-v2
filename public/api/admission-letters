@@ -1,82 +1,114 @@
 [
   {
     "img": "/img/letters/ieo-2020.04.06-KCL.jpeg",
-    "zh-CN": "伦敦国王学院",
-    "en-GB": "King's College London"
+    "university": {
+      "zh-CN": "伦敦国王学院",
+      "en-GB": "King's College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2020.03.30-UCL.jpeg",
-    "zh-CN": "UCL",
-    "en-GB": "University College London"
+    "university": {
+      "zh-CN": "UCL",
+      "en-GB": "University College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2020.02.21-Warwick.jpeg",
-    "zh-CN": "华威大学",
-    "en-GB": "University of Warwick"
+    "university": {
+      "zh-CN": "华威大学",
+      "en-GB": "University of Warwick"
+    }
   },
   {
     "img": "/img/letters/ieo-2020.02.11-IC.jpeg",
-    "zh-CN": "伦敦帝国理工学院",
-    "en-GB": "Imperial College London"
+    "university": {
+      "zh-CN": "伦敦帝国理工学院",
+      "en-GB": "Imperial College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2019.11.27-KCL.jpeg",
-    "zh-CN": "伦敦国王学院",
-    "en-GB": "King's College London"
+    "university": {
+      "zh-CN": "伦敦国王学院",
+      "en-GB": "King's College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2019.11.19-UCL.jpeg",
-    "zh-CN": "UCL",
-    "en-GB": "University College London"
+    "university": {
+      "zh-CN": "UCL",
+      "en-GB": "University College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2019.10.24-Edinburgh.jpeg",
-    "zh-CN": "爱丁堡大学",
-    "en-GB": "The University of Edinburgh"
+    "university": {
+      "zh-CN": "爱丁堡大学",
+      "en-GB": "The University of Edinburgh"
+    }
   },
   {
     "img": "/img/letters/ieo-2019.05.14-Durham.jpeg",
-    "zh-CN": "杜伦大学",
-    "en-GB": "Durham University"
+    "university": {
+      "zh-CN": "杜伦大学",
+      "en-GB": "Durham University"
+    }
   },
   {
     "img": "/img/letters/ieo-2019.02.12-Manchester.jpeg",
-    "zh-CN": "曼彻斯特大学",
-    "en-GB": "The University of Manchester"
+    "university": {
+      "zh-CN": "曼彻斯特大学",
+      "en-GB": "The University of Manchester"
+    }
   },
   {
     "img": "/img/letters/ieo-2019.02.11-UCL.jpeg",
-    "zh-CN": "UCL",
-    "en-GB": "University College London"
+    "university": {
+      "zh-CN": "UCL",
+      "en-GB": "University College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2019.01.04-UCL.jpeg",
-    "zh-CN": "UCL",
-    "en-GB": "University College London"
+    "university": {
+      "zh-CN": "UCL",
+      "en-GB": "University College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2018.12.12-KCL.jpeg",
-    "zh-CN": "伦敦国王学院",
-    "en-GB": "King's College London"
+    "university": {
+      "zh-CN": "伦敦国王学院",
+      "en-GB": "King's College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2018.12.11-Edinburgh.jpeg",
-    "zh-CN": "爱丁堡大学",
-    "en-GB": "The University of Edinburgh"
+    "university": {
+      "zh-CN": "爱丁堡大学",
+      "en-GB": "The University of Edinburgh"
+    }
   },
   {
     "img": "/img/letters/ieo-2018.11.22-KCL.jpeg",
-    "zh-CN": "伦敦国王学院",
-    "en-GB": "King's College London"
+    "university": {
+      "zh-CN": "伦敦国王学院",
+      "en-GB": "King's College London"
+    }
   },
   {
     "img": "/img/letters/ieo-2018.11.21-Warwick.jpeg",
-    "zh-CN": "华威大学",
-    "en-GB": "University of Warwick"
+    "university": {
+      "zh-CN": "华威大学",
+      "en-GB": "University of Warwick"
+    }
   },
   {
     "img": "/img/letters/ieo-2018.11.15-Manchester.jpeg",
-    "zh-CN": "曼彻斯特大学",
-    "en-GB": "The University of Manchester"
+    "university": {
+      "zh-CN": "曼彻斯特大学",
+      "en-GB": "The University of Manchester"
+    }
   }
 ]
