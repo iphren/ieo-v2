@@ -38,12 +38,6 @@ const TutorsPage = () => {
             translation: translate('christine'),
             image: '/img/people/ieo-christine.png'
         }];
-    const tutorCardSize = {
-        xs: 12,
-        sm: 6,
-        md: 4,
-        lg: 3,
-    };
 
     return <>
         <Title title={t('uk_online_courses.content.tutors.title')} />
@@ -54,10 +48,10 @@ const TutorsPage = () => {
             <Typography variant="h4" sx={{ mb: 5 }} gutterBottom>
                 {t('uk_online_courses.content.tutors.title')}
             </Typography>
-            <Grid container spacing={2} justifyContent="center">
+            <Grid container spacing={2}>
                 {tutors.map((tutor) => (
-                    <Grid size={tutorCardSize} key={tutor.image}>
-                        <Card>
+                    <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={tutor.image}>
+                        <Card elevation={2}>
                             <CardMedia
                                 component="img"
                                 image={tutor.image}
