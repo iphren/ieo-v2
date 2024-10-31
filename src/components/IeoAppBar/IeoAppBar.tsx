@@ -6,6 +6,7 @@ import styles from './IeoAppBar.module.scss';
 import CoursesButton from "./CoursesButton/CoursesButton";
 import UniversitiesButton from "./UniversitiesButton/UniversitiesButton";
 import LanguagesButton from "./LanguagesButton/LanguagesButton";
+import MobileMenu from "./MobileMenu/MobileMenu";
 
 export const activePage = (currentPath: string, path: string) => {
     return currentPath === path ? styles.activePage : "";
@@ -30,18 +31,22 @@ const IeoAppBar = () => {
                 <Link to="/">
                     <div className={styles.logoImage}></div>
                 </Link>
-                <Button
-                    id="home-button"
-                    className={`${styles.navButton} ${activePage(currentPath, "/")}`}
-                    component={Link}
-                    to="/"
-                >
-                    {t('home_page')}
-                </Button>
-                <CoursesButton path={currentPath} />
-                <UniversitiesButton path={currentPath} />
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                    <Button
+                        className={`${styles.navButton} ${activePage(currentPath, "/")}`}
+                        component={Link}
+                        to="/"
+                    >
+                        {t('home_page')}
+                    </Button>
+                    <CoursesButton path={currentPath} />
+                    <UniversitiesButton path={currentPath} />
+                </Box>
                 <Box sx={{ flexGrow: 1, textAlign: "end" }}>
                     <LanguagesButton />
+                </Box>
+                <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+                    <MobileMenu path={currentPath} />
                 </Box>
             </Toolbar>
         </Container>
