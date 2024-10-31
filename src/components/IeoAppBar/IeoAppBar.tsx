@@ -8,6 +8,10 @@ import UniversitiesButton from "./UniversitiesButton/UniversitiesButton";
 import LanguagesButton from "./LanguagesButton/LanguagesButton";
 import MobileMenu from "./MobileMenu/MobileMenu";
 
+export interface NavProps {
+    path : string;
+}
+
 export const activePage = (currentPath: string, path: string) => {
     return currentPath === path ? styles.activePage : "";
 }

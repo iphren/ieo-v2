@@ -2,12 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button, Fade, Menu, MenuItem } from "@mui/material";
 import { Link } from 'react-router-dom';
-import { activePage } from "../IeoAppBar";
+import { activePage, NavProps } from "../IeoAppBar";
 import styles from '../IeoAppBar.module.scss';
-
-interface NavProps {
-    path : string;
-}
 
 const UniversitiesButton = ({ path } : NavProps) => {
     const { t } = useTranslation();

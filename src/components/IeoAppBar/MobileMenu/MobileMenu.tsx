@@ -9,12 +9,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { Link } from 'react-router-dom';
-import { activePage } from "../IeoAppBar";
+import { activePage, NavProps } from "../IeoAppBar";
 import styles from "../IeoAppBar.module.scss";
-
-interface NavProps {
-    path : string;
-}
 
 const MobileMenu = ({ path } : NavProps) => {
     const { t } = useTranslation();
