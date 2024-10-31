@@ -92,7 +92,34 @@
       "Summer course: Learn English with a British teacher",
       "A-Level / GCSE Breakout: Reserve Now for Summer Vacation Course",
       "Under the Epidemic, Application Strategy to Win 2023"
-    ]
+    ],
+    "news_feed" : "News / Latest Updates",
+    "admissions" : "Admission List",
+    "congrats" : "Congratulations to the IEO student who got admitted to {{university}}!"
+  },
+  "university" : {
+    "kcl" : "King's College London",
+    "ucl" : "University College London",
+    "warwick" : "University of Warwick",
+    "imperial" : "Imperial College London",
+    "edinburgh" : "The University of Edinburgh",
+    "durham" : "Durham University",
+    "manchester" : "The University of Manchester"
+  },
+  "contact_us" : {
+    "title" : "Contact Us",
+    "content" : {
+      "name" : "Name (required)",
+      "name_placeholder" : "Please enter your name",
+      "email" : "Email (required)",
+      "email_placeholder" : "Please enter your email",
+      "phone" : "Phone",
+      "wechat" : "WeChat",
+      "message" : "Message (required)",
+      "message_placeholder" : "How can we help you?",
+      "send" : "Send",
+      "send_success" : "Message Sent"
+    }
   },
   "wechat_public" : "Official WeChat",
   "wechat_helper" : "WeChat Assistant",
