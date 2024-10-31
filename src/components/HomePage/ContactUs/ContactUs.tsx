@@ -9,7 +9,7 @@ const ContactUs = () => {
         my: 5,
         px: 5
     }}>
-        <Typography variant="h5" align="center">{t('contact_us.title')}</Typography>
+        <Typography variant="h5" align="center" gutterBottom>{t('contact_us.title')}</Typography>
     </Container>;
 }
 

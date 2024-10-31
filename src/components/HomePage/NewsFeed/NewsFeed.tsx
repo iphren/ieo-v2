@@ -13,7 +13,7 @@ const NewsFeed = () => {
         my: 5,
         px: 5
     }}>
-        <Typography variant="h5" align="center">{t('home.news_feed')}</Typography>
+        <Typography variant="h5" align="center" gutterBottom>{t('home.news_feed')}</Typography>
         {newsFeeds.map((feed) => {
             return <Card sx={{
                 my: 1,
