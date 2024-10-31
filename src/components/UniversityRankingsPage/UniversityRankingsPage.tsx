@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { useTranslation } from 'react-i18next';
 import Title from "../../Title";
-import { getRankings } from "../../services/RankingsService/RankingsService";
+import { getRankings } from "../../services/ResourcesService";
 import { Rankings } from "../../types";
 
 interface TabPanelProps {
