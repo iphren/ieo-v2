@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { AppBar, Button, Container, Toolbar } from "@mui/material";
+import {AppBar, Button, Container, Toolbar} from "@mui/material";
 import { Link, useLocation } from 'react-router-dom';
 import styles from './IeoAppBar.module.scss';
 import CoursesButton from "./CoursesButton/CoursesButton";
@@ -17,7 +17,7 @@ const IeoAppBar = () => {
 
     return <AppBar position="sticky" sx={{
         bgcolor: "#f8f9fa",
-        boxShadow: 0
+        boxShadow: "0 .125rem .25rem rgba(0,0,0,.075)"
     }}>
         <Container disableGutters maxWidth={false}>
             <Toolbar disableGutters sx={{
