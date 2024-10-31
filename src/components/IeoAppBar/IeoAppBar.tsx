@@ -1,10 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {AppBar, Button, Container, Toolbar} from "@mui/material";
+import { AppBar, Button, Container, Toolbar, Box } from "@mui/material";
 import { Link, useLocation } from 'react-router-dom';
 import styles from './IeoAppBar.module.scss';
 import CoursesButton from "./CoursesButton/CoursesButton";
 import UniversitiesButton from "./UniversitiesButton/UniversitiesButton";
+import LanguagesButton from "./LanguagesButton/LanguagesButton";
 
 export const activePage = (currentPath: string, path: string) => {
     return currentPath === path ? styles.activePage : "";
@@ -17,14 +18,14 @@ const IeoAppBar = () => {
 
     return <AppBar position="sticky" sx={{
         bgcolor: "#f8f9fa",
-        boxShadow: "0 .125rem .25rem rgba(0,0,0,.075)"
+        boxShadow: "0 .125rem .25rem rgba(0,0,0,.075)",
     }}>
         <Container disableGutters maxWidth={false}>
             <Toolbar disableGutters sx={{
                 bgcolor: "#f8f9fa",
                 boxShadow: 0,
                 height: "4.75rem",
-                padding: "0 1rem"
+                padding: "0 1rem",
             }}>
                 <Link to="/">
                     <div className={styles.logoImage}></div>
@@ -39,6 +40,9 @@ const IeoAppBar = () => {
                 </Button>
                 <CoursesButton path={currentPath} />
                 <UniversitiesButton path={currentPath} />
+                <Box sx={{ flexGrow: 1, textAlign: "end" }}>
+                    <LanguagesButton />
+                </Box>
             </Toolbar>
         </Container>
     </AppBar>;
