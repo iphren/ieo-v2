@@ -17,38 +17,38 @@
         "content" : {
           "wu" : {
             "name" : "Dr. Wu",
-            "intro" : "Graduated from Imperial College London. He taught at Malvern International School in Qingdao, Shandong, and is now a teacher at the top British private school Harrodian.",
-            "subjects" : "AS / A2 Physics, AS Mathematics Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, GCSE / IGCSE Mathematics, GCSE / IGCSE Physics, KS3 Mathematics and Science"
+            "intro" : "Graduated from Imperial College, Department of Engineering. He once taught at the Malvern International School in Qingdao, Shandong, and is currently a teacher at Harrodian, a top private school in the UK.",
+            "subjects" : "AS / A2 Physics, AS Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, GCSE / IGCSE Math, GCSE / IGCSE Physics, KS3 Math subjects"
           },
           "jason" : {
             "name" : "Jason",
-            "intro" : "Master's degree from Imperial College London, started studying at the top British private school Ipswich since junior high school, graduated from GCSE with 10 A and A* grades, and A-Level with four A* grades.",
+            "intro" : "Graduated from Imperial College with master degree, studied at Ipswich, a top private school in the UK, 10 A / A*'s GCSE, 4 A*'s A-Level.",
             "subjects" : "A-Level Physics / Chemistry, GCSE Science, KS3 Science"
           },
           "huang" : {
             "name" : "Huang",
-            "intro" : "Master's degree from Imperial College London, first-class degree in engineering from Manchester Engineering College, high school at the British private school Duff Miller, A-Level with four A and A* grades.",
-            "subjects" : "Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, A-Level Higher Mathematics Further Pure Math 1 / 2, Further Statistics 1 / 2, Further Mechanics 1 / 2, GCSE / IGCSE Mathematics"
+            "intro" : "Graduated from Imperial College, Department of Engineering with master degree, graduated from Manchester University, Department of Engineering with first class bachelor degree, 4 A / A*'s in A-Level at Duff Miller College in the UK.",
+            "subjects" : "Pure Math year 1 / year 2, Statistics and Mechanics Math year 1, A-Level Further Pure Math 1 / 2, Further Statistics 1 / 2, Further Machenics 1 / 2, GCSE / IGCSE Math"
           },
           "phoebe" : {
             "name" : "Phoebe",
-            "intro" : "Graduated from UCL and LSE. Worked in investment banks in London and Hong Kong.",
+            "intro" : "Graduated from UCL and LSE. Working in investment banks in London and Hong Kong.",
             "subjects" : "A-Level Economics, GCSE Economics, A-Level Business, GCSE Business"
           },
           "selena" : {
             "name" : "Selena",
-            "intro" : "Hong Kong native, grew up in the UK. Expert in teaching young children in the UK, extremely experienced. Several students have been admitted to many top British private schools such as Brighton College, Cheltenham Ladies, Downe House, etc.",
-            "subjects" : "7+ to 13+ entrance exams, IGCSE / GCSE English and literature courses, UK SATs / UKiset exams"
+            "intro" : "Born in Hong Kong, grew up in the United Kingdom. An expert of British young teaching with rich experience. Many students have been admitted to top private schools in the UK, including Brighton College, Cheltenham Ladies, Downe House, etc.",
+            "subjects" : "7+ to 13+ Entry Exams, IGCSE / GCSE English and Literature, UK SATs / UKiset"
           },
           "maddy" : {
             "name" : "Maddy",
-            "intro" : "Holds a TESOL teaching qualification, former ASDAN trainer at an international training institution, former lecturer at Uxbridge College. Ten years of teaching experience.",
-            "subjects" : "English listening / speaking / reading / writing, ESL, GCSE / A-Level English / art portfolio guidance"
+            "intro" : "Holds TESOL, former international training organization ASDAN trainer, former Uxbridge college (Uxbridge continuing education college) lecturer. Ten years of teaching experience.",
+            "subjects" : "Listening / Speaking / Reading / Writing skills in English, ESL, GCSE / A-Level English / Art Portfolio Guide"
           },
           "christine" : {
             "name" : "Christine",
-            "intro" : "Currently teaching at a public secondary school in London, with 30 years of experience in English and literature teaching, extremely rich teaching experience. A bilingual user of English and French.",
-            "subjects" : "English listening / speaking / reading / writing, ESL, GCSE / A-Level English, English subjects for private school entrance exams from 3 years old to 16 years old"
+            "intro" : "Currently teaching in a public high school in London. 30 years of teaching experience in English and Literature with extremely rich teaching experience. Native speaker of English and French.",
+            "subjects" : "Listening / Speaking / Reading / Writing skills in English, ESL, GCSE / A-Level English, English subjects for private school entry exams from the ages of 3 to 16"
           }
         }
       }
@@ -60,7 +60,21 @@
       "application_team" : {
         "title" : "Application Team",
         "content" : {
-
+          "intro" : "IEO is a professional institution that focuses on the application of the top universities in the UK. Most of our admissions come from the following nine universities: Oxford University, Cambridge University, Imperial College, London School of Economics and Political Science, University College London, King's College London, University of Edinburgh, University of Manchester and University of Warwick.",
+          "team" : {
+            "jiajie" : {
+              "name" : "Jiajie Zuo",
+              "intro" : "Twelve years of international education experience, founder of IEO. Obtained master degree at UCL, exchange student at Oxford University, holder of CLETA, ACIL. Former New Oriental teacher, former founder of Nanjing Zhumengtang Education. Proficient in the document system of the top colleges in the United Kingdom and the United States, and helping students apply to many top British and American colleges and universities including Harvard Law School. He currently lives in London, UK, focusing on the planning and application of top prestigious schools."
+            },
+            "mccloskey" : {
+              "name" : "Dr. McCloskey",
+              "intro" : "Fifteen years of international education experience, senior partner of IEO. PhD and current staff of Imperial College, former IELTS examiner. Experienced in consultation and planning work for students in top colleges. Having worked with Chinese students for many years, he is well versed in the problems of Chinese student applications. He has helped many Chinese students to admit top private schools and super elite universities."
+            },
+            "danni" : {
+              "name" : "Dr. Danni",
+              "intro" : "Nine years of experience in the international education industry, IEO project manager. PhD in Linguistics from UCL, graduated from UCL Applied Linguistics with distinction master degree, holder of CELTA. Former teacher of New Oriental and many training institutions. She has rich experience in tapping the potential of students, and has a profound writing skills in writing training and retouching."
+            }
+          }
         }
       },
       "university_rankings" : {
