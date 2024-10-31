@@ -80,7 +80,9 @@
       "university_rankings" : {
         "title" : "UK University Rankings",
         "content" : {
-
+          "rank" : "Rank",
+          "university" : "University",
+          "score" : "Score"
         }
       }
     }

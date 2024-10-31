@@ -80,7 +80,9 @@
       "university_rankings" : {
         "title" : "英国大学排名",
         "content" : {
-
+          "rank" : "排名",
+          "university" : "大学",
+          "score" : "综合得分"
         }
       }
     }
