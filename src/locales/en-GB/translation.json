@@ -101,13 +101,13 @@
     "title" : "Contact Us",
     "content" : {
       "name" : "Name (required)",
-      "name_placeholder" : "Please enter your name",
+      "name_helper" : "Please enter your name",
       "email" : "Email (required)",
-      "email_placeholder" : "Please enter your email",
+      "email_helper" : "Please enter your email",
       "phone" : "Phone",
       "wechat" : "WeChat",
       "message" : "Message (required)",
-      "message_placeholder" : "How can we help you?",
+      "message_helper" : "How can we help you?",
       "send" : "Send",
       "send_success" : "Message Sent"
     }
