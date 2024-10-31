@@ -55,7 +55,21 @@
     }
   },
   "uk_top_universities" : {
-    "title" : "Top Universities"
+    "title" : "Top Universities",
+    "content" : {
+      "application_team" : {
+        "title" : "Application Team",
+        "content" : {
+
+        }
+      },
+      "university_rankings" : {
+        "title" : "UK University Rankings",
+        "content" : {
+
+        }
+      }
+    }
   },
   "home" : {
     "carousel" : [

@@ -55,7 +55,21 @@
     }
   },
   "uk_top_universities" : {
-    "title" : "英国顶级大学"
+    "title" : "英国顶级大学",
+    "content" : {
+      "application_team" : {
+        "title" : "申请团队",
+        "content" : {
+
+        }
+      },
+      "university_rankings" : {
+        "title" : "英国大学排名",
+        "content" : {
+
+        }
+      }
+    }
   },
   "home" : {
     "carousel" : [

@@ -4,6 +4,7 @@ import { AppBar, Button, Container, Toolbar } from "@mui/material";
 import { Link, useLocation } from 'react-router-dom';
 import styles from './IeoAppBar.module.scss';
 import CoursesButton from "./CoursesButton/CoursesButton";
+import UniversitiesButton from "./UniversitiesButton/UniversitiesButton";
 
 export const activePage = (currentPath: string, path: string) => {
     return currentPath === path ? styles.activePage : "";
@@ -37,6 +38,7 @@ const IeoAppBar = () => {
                     {t('home_page')}
                 </Button>
                 <CoursesButton path={currentPath} />
+                <UniversitiesButton path={currentPath} />
             </Toolbar>
         </Container>
     </AppBar>;
