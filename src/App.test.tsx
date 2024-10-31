@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import {MemoryRouter} from "react-router-dom";
+import { MemoryRouter } from "react-router-dom";
 
-test('renders home page button', () => {
+test('renders contact us section', () => {
   render(<MemoryRouter><App /></MemoryRouter>);
-  const linkElement = screen.getByText(/home_page/i);
+  const linkElement = screen.getByText(/contact_us.title/i);
   expect(linkElement).toBeInTheDocument();
 });
