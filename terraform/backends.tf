@@ -1,8 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = var.terraform_state_bucket
+    bucket         = "configs.inedu.online"
     key            = "terraform.tfstate"
-    region         = var.aws_region
+    region         = "eu-west-2"
+    profile        = "ieo"
     encrypt        = true
   }
 }
