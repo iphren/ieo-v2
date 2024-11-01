@@ -28,3 +28,11 @@ export interface AdmissionLetter {
     img: string;
     university: Translation;
 }
+
+export interface Message {
+    email: string;
+    form_name: string;
+    form_message: string;
+    form_phone?: string;
+    form_wechat?: string;
+}
