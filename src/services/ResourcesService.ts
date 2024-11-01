@@ -3,13 +3,13 @@ import { Message, Rankings } from "../types";
 
 export const getRankings = async () => {
     const response = await axios.get<Rankings[]>(
-        'https://d1yfas0kwd4c6z.cloudfront.net/rankings');
+        'https://d1yfas0kwd4c6z.cloudfront.net/ieo/rankings');
     return response.data;
 }
 
 export const sendMessage = async (data: Message) => {
     await axios.post<null, AxiosResponse<null>, Message>(
-        '/messages',
+        'https://d1yfas0kwd4c6z.cloudfront.net/ieo/messages',
         data
     );
 }
