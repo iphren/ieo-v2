@@ -1,13 +1,12 @@
 locals {
   s3_origin_id   = "${var.app_bucket}-origin"
-  s3_domain_name = "${var.app_bucket}.s3-website-${var.aws_region}.amazonaws.com"
 }
 
 resource "aws_cloudfront_distribution" "app_cdn" {
   enabled = true
 
   origin {
-    domain_name              = local.s3_domain_name
+    domain_name              = aws_s3_bucket_website_configuration.app_bucket.website_endpoint
     origin_id                = local.s3_origin_id
     custom_origin_config {
       http_port              = 80
