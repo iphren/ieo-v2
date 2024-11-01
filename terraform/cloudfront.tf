@@ -2,18 +2,20 @@ locals {
   s3_origin_id   = "${var.app_bucket}-origin"
 }
 
+resource "aws_cloudfront_origin_access_control" "app_cdn" {
+  name                              = "s3-origin-access-control-${var.app_bucket}"
+  origin_access_control_origin_type = "s3"
+  signing_behavior                  = "always"
+  signing_protocol                  = "sigv4"
+}
+
 resource "aws_cloudfront_distribution" "app_cdn" {
   enabled = true
 
   origin {
-    domain_name              = aws_s3_bucket_website_configuration.app_bucket.website_endpoint
+    domain_name              = aws_s3_bucket.app_bucket.bucket_regional_domain_name
     origin_id                = local.s3_origin_id
-    custom_origin_config {
-      http_port              = 80
-      https_port             = 443
-      origin_protocol_policy = "http-only"
-      origin_ssl_protocols   = ["TLSv1"]
-    }
+    origin_access_control_id = aws_cloudfront_origin_access_control.app_cdn.id
   }
 
   default_root_object = "index.html"
@@ -29,7 +31,7 @@ resource "aws_cloudfront_distribution" "app_cdn" {
     compress               = true
 
     forwarded_values {
-      query_string = true
+      query_string = false
       cookies {
         forward = "none"
       }
