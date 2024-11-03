@@ -17,3 +17,11 @@ variable "app_bucket" {
 variable "aws_region" {
   type = string
 }
+
+variable "aws_cert_arn" {
+  type = string
+}
+
+variable "domain_name" {
+  type = string
+}

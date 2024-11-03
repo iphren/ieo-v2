@@ -1,6 +1,5 @@
 locals {
   s3_origin_id   = "${var.app_bucket}-origin"
-  aws_cert_arn   = "arn:aws:acm:us-east-1:387479857085:certificate/3cfb72f2-9174-498c-aff3-4d556109c60f"
 }
 
 resource "aws_cloudfront_origin_access_control" "app_cdn" {
@@ -53,11 +52,11 @@ resource "aws_cloudfront_distribution" "app_cdn" {
   }
 
   viewer_certificate {
-    acm_certificate_arn = local.aws_cert_arn
+    acm_certificate_arn = var.aws_cert_arn
     ssl_support_method  = "sni-only"
   }
 
-  aliases = ["inedu.online", "www.inedu.online"]
+  aliases = [var.domain_name, "www.${var.domain_name}"]
 
   tags = {
     Project = var.project
