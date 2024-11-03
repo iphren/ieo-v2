@@ -30,16 +30,19 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
       - name: Initialize backend
+        working-directory: ./terraform
         run: >
-          terraform -chdir=terraform init
+          terraform init
           -backend-config="bucket=${TFSTATE_BUCKET}"
           -backend-config="key=${TFSTATE_KEY}"
           -backend-config="region=${TFSTATE_REGION}"
           -backend-config="profile=${TFSTATE_PROFILE}"
 
       - name: Validate configuration
-        run: terraform -chdir=terraform validate
+        working-directory: ./terraform
+        run: terraform validate
 
       - name: Deploy infrastructure
-        run: terraform -chdir=terraform plan
+        working-directory: ./terraform
+        run: terraform plan
 #        run: terraform apply -auto-approve
