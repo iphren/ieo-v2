@@ -5,9 +5,19 @@ import './index.scss';
 import App from './App';
 import './i18n';
 
-const root = ReactDOM.createRoot(document.getElementById('root') || document.createElement('div'));
-root.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-);
+async function enableMocking() {
+    if (import.meta.env.PROD) {
+        return;
+    }
+    const { worker } = await import('./mocks/browser');
+    return worker.start();
+}
+
+enableMocking().then(() => {
+    const root = ReactDOM.createRoot(document.getElementById('root') || document.createElement('div'));
+    root.render(
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    );
+})
