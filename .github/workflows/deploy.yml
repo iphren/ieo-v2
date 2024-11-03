@@ -29,6 +29,8 @@ jobs:
       - name: Setup terraform
         uses: hashicorp/setup-terraform@v3
 
+      - run: echo $TFSTATE_BUCKET $TFSTATE_KEY $TFSTATE_REGION $TFSTATE_PROFILE
+
       - name: Initialize backend
         working-directory: ./terraform
         run: >
