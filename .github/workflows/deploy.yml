@@ -4,6 +4,9 @@ on:
   push:
     branches: [ "main" ]
 
+env:
+  env_var: ${{ vars.ENV_CONTEXT_VAR }}
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -32,7 +35,7 @@ jobs:
 
       - run: echo "Where are my variables? ${TFSTATE_BUCKET} ${TFSTATE_KEY} ${TFSTATE_REGION} ${TFSTATE_PROFILE}"
 
-      - run: echo "$GITHUB_CONTEXT"
+      - run: echo "variable from shell environment $env_var"
 
       - name: Initialize backend
         working-directory: ./terraform
