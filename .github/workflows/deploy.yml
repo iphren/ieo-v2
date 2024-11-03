@@ -30,7 +30,9 @@ jobs:
       - name: Setup terraform
         uses: hashicorp/setup-terraform@v3
 
-      - run: echo "${TFSTATE_BUCKET} ${TFSTATE_KEY} ${TFSTATE_REGION} ${TFSTATE_PROFILE}"
+      - run: echo "Where are my variables? ${TFSTATE_BUCKET} ${TFSTATE_KEY} ${TFSTATE_REGION} ${TFSTATE_PROFILE}"
+
+      - run: echo "$GITHUB_CONTEXT"
 
       - name: Initialize backend
         working-directory: ./terraform
