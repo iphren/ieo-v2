@@ -61,5 +61,4 @@ jobs:
           TF_VAR_aws_region: ${{ vars.TF_VAR_aws_region }}
           TF_VAR_domain_name: ${{ vars.TF_VAR_domain_name }}
           TF_VAR_project: ${{ vars.TF_VAR_project }}
-        run: terraform plan
-#        run: terraform apply -auto-approve
+        run: terraform apply -auto-approve
