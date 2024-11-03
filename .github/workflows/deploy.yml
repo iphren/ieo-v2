@@ -10,10 +10,13 @@ jobs:
     environment:
       name: production
     env:
-      TFSTATE_BUCKET: ${{ vars.TFSTATE_BUCKET }}
-      TFSTATE_KEY: ${{ vars.TFSTATE_KEY }}
-      TFSTATE_REGION: ${{ vars.TFSTATE_REGION }}
-      TFSTATE_PROFILE: ${{ vars.TFSTATE_PROFILE }}
+      TF_VAR_app_bucket: ${{ vars.TF_VAR_app_bucket }}
+      TF_VAR_app_id: ${{ vars.TF_VAR_app_id }}
+      TF_VAR_aws_cert_arn: ${{ vars.TF_VAR_aws_cert_arn }}
+      TF_VAR_aws_profile: ${{ vars.TF_VAR_aws_profile }}
+      TF_VAR_aws_region: ${{ vars.TF_VAR_aws_region }}
+      TF_VAR_domain_name: ${{ vars.TF_VAR_domain_name }}
+      TF_VAR_project: ${{ vars.TF_VAR_project }}
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
@@ -35,18 +38,21 @@ jobs:
       - name: Setup terraform
         uses: hashicorp/setup-terraform@v3
 
-      - run: echo "Where are my variables? ${TFSTATE_BUCKET} ${TFSTATE_KEY} ${TFSTATE_REGION} ${TFSTATE_PROFILE}"
-
-      - run: echo "variable from shell environment $env_var"
-
       - name: Initialize backend
         working-directory: ./terraform
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          TF_STATE_BUCKET: ${{ vars.TF_STATE_BUCKET }}
+          TF_STATE_KEY: ${{ vars.TF_STATE_KEY }}
+          TF_STATE_REGION: ${{ vars.TF_STATE_REGION }}
+          TF_STATE_PROFILE: ${{ vars.TF_STATE_PROFILE }}
         run: >
           terraform init
-          -backend-config="bucket=${TFSTATE_BUCKET}"
-          -backend-config="key=${TFSTATE_KEY}"
-          -backend-config="region=${TFSTATE_REGION}"
-          -backend-config="profile=${TFSTATE_PROFILE}"
+          -backend-config="bucket=${TF_STATE_BUCKET}"
+          -backend-config="key=${TF_STATE_KEY}"
+          -backend-config="region=${TF_STATE_REGION}"
+          -backend-config="profile=${TF_STATE_PROFILE}"
 
       - name: Validate configuration
         working-directory: ./terraform
@@ -54,5 +60,8 @@ jobs:
 
       - name: Deploy infrastructure
         working-directory: ./terraform
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: terraform plan
 #        run: terraform apply -auto-approve
