@@ -29,19 +29,17 @@ jobs:
       - name: Setup terraform
         uses: hashicorp/setup-terraform@v3
 
-      - run: cd terraform
-
       - name: Initialize backend
         run: >
-          terraform init
+          terraform -chdir=terraform init
           -backend-config="bucket=${TFSTATE_BUCKET}"
           -backend-config="key=${TFSTATE_KEY}"
           -backend-config="region=${TFSTATE_REGION}"
           -backend-config="profile=${TFSTATE_PROFILE}"
 
       - name: Validate configuration
-        run: terraform validate
+        run: terraform -chdir=terraform validate
 
       - name: Deploy infrastructure
-        run: terraform plan
+        run: terraform -chdir=terraform plan
 #        run: terraform apply -auto-approve
