@@ -10,8 +10,15 @@ const ContactUs = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors, isDirty, isValid },
     } = useForm();
+
+    const onSubmit = (data: Message) => {
+        sendMessage(data).then(() => {
+            reset();
+        });
+    };
 
     return <Container fixed={true} sx={{
         my: 5,
@@ -21,7 +28,7 @@ const ContactUs = () => {
             <Typography variant="h5" align="center" sx={{ mb: 3 }}>{t('contact_us.title')}</Typography>
             <Box
                 component="form"
-                onSubmit={handleSubmit((data) => sendMessage(data as Message))}
+                onSubmit={handleSubmit((data) => onSubmit(data as Message))}
                 sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}>
                 <Box sx={{ flexGrow: 1, pr: { xs: 0, sm: 2 }, pb: { xs: 2, sm: 0 } }}>
                     <TextField
